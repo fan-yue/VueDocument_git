@@ -8,6 +8,19 @@
     <script src="../js/vue.js"></script>
 </head>
 <body>
-    
+    <div id="a">
+        <p>{{name}}</p>
+    </div>
+    <script>
+        const v = new Vue({
+            el:"#a",
+            data(){
+                return{
+                    name:'姓名',
+                    age:18
+                }
+            }
+        })
+    </script>
 </body>
 </html>

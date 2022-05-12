@@ -58,7 +58,7 @@
         <!-- @click.once  中的 once ：事件只触发一次(常用) -->
         <button @click.once="show">使用once，让事件只触发一次</button>
 
-        <!-- @click.capture  中的 capture : 使用时间的捕获方式，因为浏览器默认是冒泡事件，capture修饰符添加到事件捕获的对应父元素上 -->
+        <!-- @click.capture  中的 capture : 使用事件的捕获方式，因为浏览器默认是冒泡事件，capture修饰符添加到事件捕获的对应父元素上 -->
         <div class="box1" @click.capture="mes(1)">
             box1
             <div class="box2" @click="mes(2)">box2</div>

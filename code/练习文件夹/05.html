@@ -12,34 +12,29 @@
 </head>
 <body>
     <div id="a">
-        姓：<input type="text" v-model:value="first">
-        <br>
-        名：<input type="text" v-model:value="lastname">
-        <br>
-        <span>{{fn}}</span>
+        <h3>{{info}}</h3>
+        <button @click="change">按钮</button>
     </div>
 
     <script>
         const vm = new Vue({
             el:"#a",
             data:{
-                first:"张",
-                lastname:"三",
+                isHot:true
             },
-            computed:{
-                fn:{
-                    get(){
-                        return this.first+'-'+this.lastname
-                    },
-                    //  set 什么时候被调用？ fn 被修改时调用
-                   set(value){
-                       console.log('set',value);
-                       const arr = value.split('-');
-                       this.first = arr[0];
-                       this.lastname = arr[1];
-                   }
+            computed: {
+                info(){
+                    return this.isHot ? '热' :'晾';
+                }
+            },
+            methods: {
+                change(){
+                    this.isHot = !this.isHot
                 }
             }
+        })
+        vm.$watch('isHot',function(newVlaue,oldValue){
+            console.log('isHot被调用了',newVlaue,oldValue);
         })
     </script>
 </body>

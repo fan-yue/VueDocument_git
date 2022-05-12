@@ -20,7 +20,7 @@
 
     
 
-### get
+### get() 正常写法
 
 读取`computed`中的方法时，使用`get()`函数
 
@@ -59,7 +59,40 @@
 
 
 
-### set
+### get() 简写形式
+
+计算属性`computed`中只用到`get`读取属性，就可以使用简写形式，**只读不写**
+
+```
+    <div id="a">
+        姓：<input type="text" v-model:value="first">
+        <br>
+        名：<input type="text" v-model:value="lastname">
+        <br>
+        <span>{{fn}}</span>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el:"#a",
+            data:{
+                first:"张",
+                lastname:"三",
+            },
+            // computed 里面 fn函数的 简写形式
+            computed:{
+                fn(){
+                    console.log('get被调用');
+                    return this.first+'-'+this.lastname;
+                }
+            }
+        })
+    </script>
+```
+
+
+
+### set()  
 
 如果计算属性`computed`需要被修改，需要使用使用`set()`函数
 

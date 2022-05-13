@@ -7,34 +7,35 @@
     <title>Document</title>
     <script src="../js/vue.js"></script>
     <style>
-        
     </style>
 </head>
 <body>
     <div id="a">
-        <h3>{{info}}</h3>
-        <button @click="change">按钮</button>
+        <button @click.once="add">添加</button>
+        <ul>
+            <li v-for="p of persons" :key="p.id">
+                {{p.name}}-{{p.age}}
+                <input type="text" >
+            </li>
+        </ul>
     </div>
 
     <script>
         const vm = new Vue({
             el:"#a",
             data:{
-                isHot:true
-            },
-            computed: {
-                info(){
-                    return this.isHot ? '热' :'晾';
-                }
+                persons:[
+                    {id:'001',name:'行三',age:18},
+                    {id:'002',name:'露丝',age:19},
+                    {id:'003',name:'李武',age:20}
+                ],
             },
             methods: {
-                change(){
-                    this.isHot = !this.isHot
+                add(){
+                    const p= {id:'004',name:'老六',age:30};
+                    this.persons.push(p);
                 }
-            }
-        })
-        vm.$watch('isHot',function(newVlaue,oldValue){
-            console.log('isHot被调用了',newVlaue,oldValue);
+            },
         })
     </script>
 </body>

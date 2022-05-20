@@ -9,6 +9,13 @@
 - [绑定样式](./docs/08绑定样式.md)
 - [条件渲染](./docs/09条件渲染.md)
 - [列表渲染](./docs/10列表渲染.md)
+- [VueSet的使用](./docs/11VueSet的使用.md)
+- [v-model表单数据的使用](./docs/12v-model收集表单数据的使用.md)
+- [过滤器filters](./docs/13过滤器.md)
+- [vue指令](./docs/14指令.md)
+
+
+
 
 
 

@@ -7,6 +7,7 @@
   - [**Vue学习文档**](https://fan-yue.github.io/VueDocument_git/)
   - [**HtmlCss收集**](https://fan-yue.github.io/HtmlCss_git/)
   - [**LESS学习文档**](https://fan-yue.github.io/less_git/)
+  - [**jquery学习文档**](https://fan-yue.github.io/jquery_git/)
   <hr>
 - 开发必备
   - [**在线ASCII码表**](http://www.fly63.com/tool/ascii/)

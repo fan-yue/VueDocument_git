@@ -13,6 +13,8 @@
 - [v-model表单数据的使用](./docs/12v-model收集表单数据的使用.md)
 - [过滤器filters](./docs/13过滤器.md)
 - [vue指令](./docs/14指令.md)
+- [生命周期mounted](./docs/15生命周期.md)
+
 
 
 

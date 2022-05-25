@@ -2,7 +2,7 @@
     <!-- 组件结构 -->
     <div class="demo">
         <h2>学校名称{{schoolName}}</h2>
-        <h2>学生年龄{{address}}</h2>
+        <h2>学校地址{{address}}</h2>
     </div>    
 </template>
 
@@ -10,7 +10,7 @@
     // vue文件，组件的简写形式
     export default{
         // 命名规范
-        name:'School',
+        name:'MySchool',
         // 组件定义时，不能写 el 配置项，因为最终所有组件都要被一个 VM 管理，由 VM 决定服务与谁
         data(){
             return{

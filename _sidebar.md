@@ -14,6 +14,8 @@
 - [过滤器filters](./docs/13过滤器.md)
 - [vue指令](./docs/14指令.md)
 - [生命周期mounted](./docs/15生命周期.md)
+- [组件_第二章开启](./docs/16组件.md)
+
 
 
 

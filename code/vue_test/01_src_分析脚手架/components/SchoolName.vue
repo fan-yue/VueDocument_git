@@ -10,7 +10,7 @@
     // vue文件，组件的简写形式
     export default{
         // 命名规范
-        name:'MySchool',
+        name:'SchoolName',
         // 组件定义时，不能写 el 配置项，因为最终所有组件都要被一个 VM 管理，由 VM 决定服务与谁
         data(){
             return{
